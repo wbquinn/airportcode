@@ -31,7 +31,7 @@ describe('index.test.js', () => {
 
     after(() => ffProc.kill());
 
-    it('helloGET: should print hello world', async () => {
+    it('helloGET: should print airports of the world', async () => {
       const response = await httpInvocation('airportsGET', PORT);
       assert.strictEqual(response.status, 200);
       assert.strictEqual(response.data, 'Airports of the World!');
