@@ -7,7 +7,7 @@ steps:
   - gcloud
   - functions
   - deploy
-  - airport-code-lookup-2
+  - airport-code-lookup
   - --region=europe-west1
   - --source=.
   - --trigger-http
