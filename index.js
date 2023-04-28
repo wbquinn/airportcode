@@ -1,7 +1,5 @@
-'use strict';
-
 const functions = require('@google-cloud/functions-framework');
 
-functions.http('airportsGET', (req, res) => {
-  res.send('Airports of the World!');
+functions.http('helloHttp', (req, res) => {
+  res.send(`Hello ${req.query.name || req.body.name || 'World'}!`);
 });
