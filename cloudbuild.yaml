@@ -11,5 +11,5 @@ steps:
   - --region=europe-west1
   - --source=.
   - --trigger-http
-  - --runtime=RUNTIME
+  - --runtime=nodejs16
 timeout: 300s
